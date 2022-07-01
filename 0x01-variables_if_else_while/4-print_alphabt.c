@@ -3,21 +3,18 @@
 /**
  * main - Prints the alphabet except the letters q and e.
  *
- * Return: 0 on success
+ * Return: Always 0 (success)
  */
 
 int main(void)
 {
-	char c = 'a';
+	int i;
 
-	while (c <= 'z')
+	for (i = 97; i <= 122; i++)
 	{
-		if (c != 'q' && c != 'e')
-		{
-			putchar(c);
-
-			c++;
-		}
-		putchar('\n');
-		return (0);
+		if (!(i == 113 || i == 101))
+			putchar(i);
 	}
+	putchar('\n');
+	return (0);
+}

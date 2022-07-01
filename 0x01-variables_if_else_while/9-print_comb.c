@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <time.h>
+#include <stdio.h>
 
 /**
  * main - This program prints a-z to std output
@@ -6,17 +8,18 @@
  */
 int main(void)
 {
-	int num;
+	int ch;
 
-	for (num = 0; num < 9; num++)
+	for (ch = 48; ch <= 57 ch++)
 	{
-		putchar((num % 10) + '0');
-		if (num == 9)
-			continue;
+	putchar(ch);
+	if (ch != 57)
+	{
+	putchar(44);
+	putchar(32);
+	}
+	}
+	putchar(10);
 
-			putchar(',');
-			putchar(' ');
-		}
-	putchar('\n');
 	return (0);
 }

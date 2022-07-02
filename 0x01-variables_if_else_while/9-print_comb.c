@@ -1,25 +1,22 @@
 #include <stdio.h>
-#include <time.h>
-#include <stdio.h>
 
 /**
- * main - This program prints a-z to std output
+ * main - This program prints all decimal
+ * digits without using printf
  * Return: Exit status is zero if successful
  */
 int main(void)
 {
-	int ch;
+	int i;
 
-	for (ch = 48; ch <= 57 ch++)
+	for (i = 48; i <= 57; i++)
 	{
-	putchar(ch);
-	if (ch != 57)
-	{
-	putchar(44);
-	putchar(32);
+		putchar(i);
+		if (i == 57)
+			break;
+		putchar(44);
+		putchar(32);
 	}
-	}
-	putchar(10);
-
+	putchar('\n');
 	return (0);
 }

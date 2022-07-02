@@ -10,3 +10,4 @@
 8. A program that prints all the numbers of base 16 in lowercase, followed by a new line.
 9. A program that prints all possible combinations of single-digit numbers.
 10. A program that prints all possible different combinations of two digits
+11. A program that prints all possible different combinations of three digits.

@@ -1,25 +1,23 @@
 #include "main.h"
 
 /**
- * print_sign - Check for -ve, +ve or 0 integers
- * @n: This is a real number
- * Return: 0 if zero, 1 if > 0 and -1 if < 0
+ * _abs - Computes the absolute value of the integer passed
+ * @n:@n: This is a real number
+ *
+ * Return: Absolute Value
  */
-int print_sign(int n)
+int _abs(int n)
 {
 	if (n > 0)
 	{
-		_putchar('+');
-		return (1);
+		return (n);
 	}
 	else if (n < 0)
 	{
-		_putchar('-');
-		return (-1);
+		return (n * -1);
 	}
 	else
 	{
-		_putchar('0');
 		return (0);
 	}
 }

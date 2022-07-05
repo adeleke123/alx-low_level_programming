@@ -5,7 +5,6 @@
  *
  * Return:always 0 (success)
  */
-
 int main(void)
 {
 	char text[9] = "_putchar";

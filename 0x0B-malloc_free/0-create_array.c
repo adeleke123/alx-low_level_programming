@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * create_array - Creates an array and assigns it values

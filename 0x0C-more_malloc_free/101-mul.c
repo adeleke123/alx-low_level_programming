@@ -1,12 +1,13 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
- * main - This prints multiplication of 2 numbers
- * @argc: This is the argument count
- * @argv: This is the argument vector
- *
- * Return: Always 0
+ * main - multiplies two positive numbers
+ * @argc: numbers of arguments
+ * @argv: array of argument
+ * Return: 0 (Success)
  */
+
 int main(int argc, char **argv)
 {
 	int i, j;
@@ -34,6 +35,5 @@ int main(int argc, char **argv)
 	num2 = atol(argv[2]);
 
 	printf("%lu\n", num1 * num2);
-
 	return (0);
 }

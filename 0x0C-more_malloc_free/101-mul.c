@@ -1,41 +1,54 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <ctype.h>
 
 /**
- * main - This prints multiplication of 2 numbers
- * @argc: This is the argument count
- * @argv: This is the argument vector
+ * _is_zero - determines if any number is zero
+ * @argv: argument vector.
  *
- * Return: Always 0
+ * Return: no return.
  */
-int main(int argc, char **argv)
+void _is_zero(char *argv[])
 {
-	int i, j;
-	unsigned long num1, num2;
+	int i, isn1 = 1, isn2 = 1;
 
-	if (argc != 3)
-	{
-		printf("Error\n");
-		exit(98);
-	}
-
-	for (i = 1; i < argc; i++)
-	{
-		for (j = 0; argv[i][j] != '\0'; j++)
+	for (i = 0; argv[1][i]; i++)
+		if (argv[1][i] != '0')
 		{
-			if (argv[i][j] < 48 || argv[i][j] > 57)
-			{
-				printf("Error\n");
-				exit(98);
-			}
+			isn1 = 0;
+			break;
 		}
+
+	for (i = 0; argv[2][i]; i++)
+		if (argv[2][i] != '0')
+		{
+			isn2 = 0;
+			break;
+		}
+
+	if (isn1 == 1 || isn2 == 1)
+	{
+		printf("0\n");
+		exit(0);
 	}
+}
 
-	num1 = atol(argv[1]);
-	num2 = atol(argv[2]);
+/**
+ * _initialize_array - set memery to zero in a new array
+ * @ar: char array.
+ * @lar: length of the char array.
+ *
+ * Return: pointer of a char array.
+ */
+char *_initialize_array(char *ar, int lar)
+{
+	int i = 0;
 
-	printf("%lu\n", num1 * num2);
+	for (i = 0; i < lar; i++)
+		ar[i] = '0';
+	ar[lar] = '\0';
+	return (ar);
 
-	return (0);
+
 }

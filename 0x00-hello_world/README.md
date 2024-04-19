@@ -17,7 +17,8 @@ https://github.com/adeleke123/alx-low_level_programming/assets/51156057/201e469f
 + [Betty Coding Style](https://github.com/alx-tools/Betty/wiki)
 + [Hash-bang under the hood](https://twitter.com/unix_byte/status/1024147947393495040?s=21) (Look at only after you finish consuming the other resources)
 + [Linus Torvalds on C vs. C++](http://harmful.cat-v.org/software/c++/linus) (Look at only after you finish consuming the other resources)
-man or help:
+
+# man or help:
 
 + `gcc`
 + `printf (3)`

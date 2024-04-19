@@ -1,7 +1,28 @@
 # 0x00. C - Hello, World
 `C`
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/co0b0xLEuRM" title="0x00. C - Hello, World" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+https://github.com/adeleke123/alx-low_level_programming/assets/51156057/201e469f-ef82-4a29-a1e1-177166f2ad25
+
++ Resources
++ Read or watch:
+
++ [Everything you need to know to start with C.pdf](https://intranet.alxswe.com/rltoken/P01aLj9BDfDUOv-y9x82Yw) (You do not have to learn everything in there yet, but make sure you read it entirely first)
+Dennis Ritchie
+“C” Programming Language: Brian Kernighan
+Why C Programming Is Awesome
+Learning to program in C part 1
+Learning to program in C part 2
+Understanding C program Compilation Process
+Betty Coding Style
+Hash-bang under the hood (Look at only after you finish consuming the other resources)
+Linus Torvalds on C vs. C++ (Look at only after you finish consuming the other resources)
+man or help:
+
+gcc
+printf (3)
+puts
+putchar
 
 In this project, I learned about compilation using `gcc`, entry
 points using `main`, and text-printing functions in C. GCC is basically a C compiler.

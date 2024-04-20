@@ -104,6 +104,70 @@ done
 + You can now type `betty <filename>` to run the Betty linter!
 
 
+
+## Quiz questions
+
+# Question #0
+
++ Which command can be used to compile a C source file?
+
++ `gcc`
++ c-compiler
++ bash
+
+# Question #1
+
++ What is the common extension for a C source file?
+
++ `.c`
++ .py
++ .txt
++ .cpp
+
+# Question #2
++ What is the common extension for a C header file?
+
++ .hpp
++ .ch
++ .header
++ `.h`
+
+# Question #3
++ In which category belongs the C programming language?
+
++ `Compiled language`
++ Interpreted language
+
+# Question #4
++ What are the different steps to form an executable file from C source code
+
++ Compilation and linking
++ `Preprocessing, compilation, assembly, and linking`
++ Preprocessing and compilation
++ Interpretation, assembly and compilation
++ Interpretation, compilation and assembly
+
+# Question #5
++ Which of the following are both valid comment syntaxes in ANSI C, and Betty-compliant?
+
+# Comment
+
++ // Comment
+`
+  /*
++  * Comment
+  */
+`
++ /* Comment /* nested */ */
+
+  /*
++  Comment
+  */
+
++ /* Comment */
+
+
+
 In this project, I learned about compilation using `gcc`, entry
 points using `main`, and text-printing functions in C. GCC is basically a C compiler.
 

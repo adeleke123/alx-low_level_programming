@@ -153,23 +153,25 @@ done
 # Question #5
 + Which of the following are both valid comment syntaxes in ANSI C, and Betty-compliant?
 
-+ Comment
+```
 
-+ // Comment
-  
-`
-  /*
-+  * Comment
-  */
-`
+# Comment
 
-+ /* Comment /* nested */ */
+// Comment
 
-  /*
-+  Comment
-  */
+/*
+ * Comment
+ */
 
-+ /* Comment */
+/* Comment /* nested */ */
+
+/*
+Comment
+*/
+
+/* Comment */
+
+```
 
 
 

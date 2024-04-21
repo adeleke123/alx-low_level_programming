@@ -181,8 +181,45 @@ points using `main`, and text-printing functions in C. GCC is basically a C comp
 ## Tasks :page_with_curl:
 
 * **0. Preprocessor**
-  * [0-preprocessor](./0-preprocessor): Bash script that runs a C file saved in the
-  variable `$CFILE` through the preprocessor and saves the result in the file `c`.
+
++ Write a script that runs a C file through the preprocessor and save the result into another file.
+
++ The C file name will be saved in the variable $CFILE
++ The output should be saved in the file c
+```
+julien@ubuntu:~/c/0x00$ cat main.c 
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+    return (0);
+}
+julien@ubuntu:~/c/0x00$ export CFILE=main.c
+julien@ubuntu:~/c/0x00$ ./0-preprocessor 
+julien@ubuntu:~/c/0x00$ tail c
+# 942 "/usr/include/stdio.h" 3 4
+
+# 2 "main.c" 2
+
+
+# 3 "main.c"
+int main(void)
+{
+ return (0);
+}
+julien@ubuntu:~/c/0x00$
+ 
+```
++ Repo:
+
++ GitHub repository: `alx-low_level_programming`
++ Directory: `0x00-hello_world`
++ File: `0-preprocessor`
 
 * **1. Compiler**
   * [1-compiler](./1-compiler): Bash script that compiles a C file saved in the

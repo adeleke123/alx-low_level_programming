@@ -365,6 +365,7 @@ julien@ubuntu:~/c/0x00$
 + File: `4-puts.c`
   
 **5. Hello, printf**
+
 Write a C program that prints exactly `with proper grammar, but the outcome is a piece of art,`, followed by a new line.
 
 + Use the function `printf`

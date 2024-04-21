@@ -47,8 +47,157 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 + What are the purpose of the `gcc` flags `-m32` and `-m64`
 
 
+**Requirements**
+
+**General**
+
++ Allowed editors: `vi`, `vim`, `emacs`
++ All your files will be compiled on Ubuntu 20.04 LTS using `gcc`, using the options `-Wall -Werror -Wextra -pedantic -std=gnu89`
++ All your files should end with a new line
++ A `README.md` file at the root of the repo, containing a description of the repository
++ A `README.md` file, at the root of the folder of this project, containing a description of the project
++ There should be no errors and no warnings during compilation
++ You are not allowed to use `system`
++ Your code should use the `Betty` style. It will be checked using [betty-style.pl](https://github.com/alx-tools/Betty/blob/master/betty-style.pl) and [betty-doc.pl](https://github.com/alx-tools/Betty/blob/master/betty-doc.pl)
 
 
+**Quiz questions**
+
+**Question #0**
+
+Which of the following are valid if statements in ANSI C and Betty-compliant? (Considering a and b two variables of type int)
+
+Please select all correct answers
+```
+
+if ((((((a > b))))))
+{
+  return (a);
+}
+
+if (a > b)
+{
+  return (a);   correct
+}
+
+if (a > b)
+  return (a);
+
+if {a > b}
+(
+  return {a};   correct
+)
+
+if a > b
+{
+  return (a);
+}
+
+```
+**Question #1**
+
+What is the size of the `char` data type?
+
++ 2 bytes
++ 8 bytes
++ `1 byte`
++ 4 bytes
+
+**Question #2**
+
+What is the size of the `float` data type?
+
++ 2 bytes
++ 8 bytes
++ 1 byte
++ `4 bytes`
+
+**Question #3**
+
+What is the size of the `unsigned int` data type?
++ 2 bytes
++ 8 bytes
++ 1 byte
++ `4 bytes`
+
+**Question #4**
+
+Which of the following are valid `while` or `do/while` statements in ANSI C and Betty-compliant? (Considering `a` and `b` two variables of type `int`)
+
+Please select all correct answers
+
+```
+
+a = 0;
+while (a < b)
+(
+    printf("%d\n", a);
+    a++;
+)
+
+a = 0;
+while (a < b)
+{
+    printf("%d\n", a);   correct
+    a++;
+}
+
+a = 0;
+while (a < b)
+    printf("%d\n", a++);    correct
+
+a = 0;
+do while (a < b)
+{
+    printf("%d\n", a);
+    a++;
+}
+
+a = 0;
+do {
+    printf("%d\n", a);    correct
+    a++;
+} while (a < b);
+
+while (a = 0; a < b; a++)
+{
+    printf("%d\n", a);
+}
+
+```
+**Question #5**
+
+Which of the following are valid `for` statements in ANSI C and Betty-compliant? (Considering `a` and `b` two variables of type `int`)
+
+Please select all correct answers
+```
+
+a = 0;
+for (a < b;;)
+{
+    printf("%d\n", a++);
+}
+
+for (a = 0; a < b; a++)    correct
+    printf("%d\n", a);
+
+a = 0;
+for (; a < b;)
+{
+    printf("%d\n", a++);   correct
+}
+
+for (int a = 0; a < b; a++)
+{
+    printf("%d\n", a);
+}
+
+for (a = 0; a < b; a++)
+{
+    printf("%d\n", a);    correct
+}
+
+```
 
 
 In this project, I learned about using arithmetic, logical, relational, and boolean

@@ -3,6 +3,7 @@
 `C`
 
 **Resources**
+-------------
 **Read or watch:**
 
 + [Everything you need to know to start with C.pdf](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/misc/2022/4/e0ccf91eec6b977a9e00ed384dc285df9c2772e3.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240421%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240421T104352Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=0793776ff32b232f801b70698306f808f105752db68bc08e02a5c3ded0b82578) (You do not have to learn everything in there yet, but make sure you read it entirely first and make sure you understand the slides: “comments”, “Data types | Integer types”, “Declaration”, “Characters”, “Arithmetic operators”, “Variables assignments”, “Comparisons”, “Logical operators”, “if, if…else”, “while loops”.)

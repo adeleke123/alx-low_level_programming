@@ -2,6 +2,7 @@
 ==================================
 
 -   By Julien Barbier
+- `C` `Algorithm` `Data structure`
 
 Resources
 --------

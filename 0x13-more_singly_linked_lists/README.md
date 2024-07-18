@@ -4,7 +4,7 @@
 -   By Julien Barbier
 
 Resources
----------
+--------
 
 **Read or watch**:
 

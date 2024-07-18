@@ -3,7 +3,7 @@
 `C`
  
  + Weight: 1
---------------
+-------------
  
 
 https://github.com/adeleke123/alx-low_level_programming/assets/51156057/201e469f-ef82-4a29-a1e1-177166f2ad25

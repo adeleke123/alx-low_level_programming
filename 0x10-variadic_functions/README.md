@@ -16,7 +16,9 @@ Resources
 **man or help**:
 
 -   `stdarg`
-**Additional Resources**
+
+  Additional Resources
+  --------------------
 
 - [Variadic Functions in C Programming](https://intranet.alxswe.com/rltoken/GCUec79qbapf6ZeGLmMRFg)
 

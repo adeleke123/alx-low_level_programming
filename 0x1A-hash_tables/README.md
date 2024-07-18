@@ -1,4 +1,4 @@
-x1A. C - Hash tables
+0x1A. C - Hash tables
 ====================
 
 -   By Julien Barbier
@@ -167,13 +167,11 @@ julien@ubuntu:~/0x1A. Hash tables$
 -   Directory: `0x1A-hash_tables`
 -   File: `0-hash_table_create.c`
 
- Done? Help Check your code Ask for a new correction Get a sandbox QA Review
-
+ 
 ### 1\. djb2
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
 
 Write a hash function implementing the djb2 algorithm.
 
@@ -239,8 +237,6 @@ julien@ubuntu:~/0x1A. Hash tables$
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
-
 Write a function that gives you the index of a key.
 
 -   Prototype: `unsigned long int key_index(const unsigned char *key, unsigned long int size);`
@@ -303,8 +299,6 @@ julien@ubuntu:~/0x1A. Hash tables$
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
-
 Write a function that adds an element to the hash table.
 
 -   Prototype: `int hash_table_set(hash_table_t *ht, const char *key, const char *value);`
@@ -361,7 +355,6 @@ If you want to test for collisions, here are some strings that collide using the
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
 
 Write a function that retrieves a value associated with a key.
 
@@ -500,8 +493,6 @@ julien@ubuntu:~/0x1A. Hash tables$
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
-
 Write a function that deletes a hash table.
 
 -   Prototype: `void hash_table_delete(hash_table_t *ht);`
@@ -580,11 +571,11 @@ julien@ubuntu:~/0x1A. Hash tables$
 
 #advanced
 
-Score: 0.00% (Checks completed: 0.00%)
 
 In [PHP](https://alx-intranet.hbtn.io/rltoken/UoWjDMSf7CR02W8bnn1geg "PHP"), hash tables are **ordered**. Wait... WAT? How is this even possible?
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/5ebbea5dea5a575b38243d597604000715982925.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220106T101606Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=e72c795827e974decbca3babf3f6d270a64e257aead4b343f93ca814dbbdb607)
+![image](https://github.com/user-attachments/assets/f9e0c56f-c823-493e-a87d-545e02719240)
+
 
 **Before you continue**, please take a moment to think about it: how you would implement it if you were asked to during an interview or a job. What data structures would you use? How would it work?
 
@@ -698,8 +689,10 @@ julien@ubuntu:~/0x1A. Hash tables$ ./sht
 {'z': '4', 'y': '0', 'n': '5', 'm': '7', 'j': '1', 'c': '2', 'b': '3', 'a': '6'}
 julien@ubuntu:~/0x1A. Hash tables$
 
-```\
-![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/253/php.png)
+```
+
+![image](https://github.com/user-attachments/assets/906ca580-a564-45c0-88f4-b34e940028d4)
+
 
 **Repo:**
 

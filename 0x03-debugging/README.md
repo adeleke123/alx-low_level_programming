@@ -112,7 +112,7 @@ carrie@ubuntu:/debugging$
 - File: `0-main.c`, `main.h`
   
 
-1. Like, comment, subscribe
+**1. Like, comment, subscribe**
 ----------------------------
 Copy this main file. Comment out (don’t delete it!) the part of the code that is causing the output to go into an infinite loop.
 
@@ -165,7 +165,7 @@ carrie@ubuntu:/debugging$
 - Directory: `0x03-debugging`
 - File: `1-main.c`
 
-2. 0 > 972?
+**2. 0 > 972?**
 ------------
 This program prints the largest of three integers.
 
@@ -253,7 +253,7 @@ carrie@ubuntu:/debugging$
 - Directory: `0x03-debugging`
 - File: `2-largest_number.c`, `main.h`
 
-  3. Leap year
+  **3. Leap year**
   ----------------
   
 This program converts a date to the day of year and determines how many days are left in the year, taking leap year into consideration.

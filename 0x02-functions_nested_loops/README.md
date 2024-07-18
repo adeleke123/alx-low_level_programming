@@ -46,51 +46,140 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 
 
 
-In this project, I learned about nested loops, header files, and variable scope
-in C while practicing declaring and defining my own functions.
 
-## Helper File :raised_hands:
 
-* [_putchar.c](./_putchar.c): C function that writes a character to `stdout`.
-
-## Header File :file_folder:
-
-* [main.h](./main.h): Header file containing prototypes for all
-functions written in the project.
-
-| File                     | Prototype                        |
-| ------------------------ | -------------------------------- |
-| `1-alphabet.c`           | `void print_alphabet(void);`     |
-| `2-print_alphabet_x10.c` | `void print_alphabet_x10(void);` |
-| `3-islower.c`            | `int _islower(int c);`           |
-| `4-isalpha.c`            | `int _isalpha(int c);`           |
-| `5-sign.c`               | `int print_sign(int n);`         |
-| `6-abs.c`                | `int _abs(int);`                 |
-| `7-print_last_digit.c`   | `int print_last_digit(int);`     |
-| `8-24_hours.c`           | `void jack_bauer(void);`         |
-| `9-times_table.c`        | `void times_table(void)`         |
-| `10-add.c`               | `int add(int, int);`             |
-| `11-print_to_98.c`       | `void print_to_98(int n);`       |
-| `100-times_table.c`      | `void print_times_table(int n)`  |
 
 ## Tasks :page_with_curl:
 
 * **0. _putchar**
-  * [_putchar.c](./_putchar.c): C program that prints `_putchar`, followed by a
-  new line. Returns 0.
+  Write a program that prints `_putchar`, followed by a new line.
+
+- The program should return `0`
+
+```
+julien@ubuntu:~/0x02$  gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-putchar.c -o 0-putchar
+julien@ubuntu:~/0x02$ ./0-putchar 
+_putchar
+julien@ubuntu:~/0x02$
+
+```
+**Repo:**
+
+- GitHub repository: `alx-low_level_programming`
+- Directory: `0x02-functions_nested_loops`
+- File: `0-putchar.c`
 
 * **1. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game**
-  * [1-alphabet.c](./1-alphabet.c): C function that prints the alphabet in lowercase,
-  followed by a new line.
+  Write a function that prints the alphabet, in lowercase, followed by a new line.
+
+- Prototype: `void print_alphabet(void);`
+- You can only use `_putchar` twice in your code
+```
+julien@ubuntu:~/0x02$ cat 1-main.c
+#include "main.h"
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    print_alphabet();
+    return (0);
+}
+julien@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 1-main.c 1-alphabet.c -o 1-alphabet
+julien@ubuntu:~/0x02$ ./1-alphabet 
+abcdefghijklmnopqrstuvwxyz
+julien@ubuntu:~/0x02$
+```
+
+**Repo:**
+- GitHub repository: `alx-low_level_programming`
+- Directory: `0x02-functions_nested_loops`
+- File: `1-alphabet.c`
 
 * **2. 10 x alphabet**
-  * [2-print_alphabet_x10.c](./2-print_alphabet_x10.c): C function that prints the
-  alphabet in lowercase 10 times, followed by a new line.
+  Write a function that prints 10 times the alphabet, in lowercase, followed by a new line.
+
+- Prototype: `void print_alphabet_x10(void);`
+- You can only use `_putchar` twice in your code
+
+```
+julien@ubuntu:~/0x02$ cat 2-main.c
+#include "main.h"
+
+/**
+ * main - check the code.
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    print_alphabet_x10();
+    return (0);
+}
+julien@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 2-main.c 2-print_alphabet_x10.c -o 2-alphabet_x10
+julien@ubuntu:~/0x02$ ./2-alphabet_x10 
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+julien@ubuntu:~/0x02$ 
+```
+**Repo:**
+
+- GitHub repository: `alx-low_level_programming`
+- Directory: `0x02-functions_nested_loops`
+- File: `2-print_alphabet_x10.c`
 
 * **3. islower**
-  * [3-islower.c](./3-islower.c): C function that checks for lowercase characters.
-  Returns `1` if the character is lowercase, `0` otherwise.
+Write a function that checks for lowercase character.
 
+- Prototype: `int _islower(int c);`
+- Returns `1` if `c` is lowercase
+- Returns `0` otherwise
+- FYI: The standard library provides a similar function: `islower`. Run `man islower` to learn more.
+```
+julien@ubuntu:~/0x02$ cat 3-main.c 
+#include "main.h"
+
+/**
+ * main - check the code.
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    int r;
+
+    r = _islower('H');
+    _putchar(r + '0');
+    r = _islower('o');
+    _putchar(r + '0');
+    r = _islower(108);
+    _putchar(r + '0');
+    _putchar('\n');
+    return (0);
+}
+julien@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 3-main.c 3-islower.c -o 3-islower
+julien@ubuntu:~/0x02$ ./3-islower 
+011
+julien@ubuntu:~/0x02$ 
+```
+**Repo:**
+
+- GitHub repository: `alx-low_level_programming`
+- Directory: `0x02-functions_nested_loops`
+- File: `3-islower.c`
+
+  
 * **4. isalpha**
   * [4-isalpha.c](./4-isalpha.c): C function that checks for alphabetic characters.
   Returns `1` if the character is a letter, `0` otherwise.

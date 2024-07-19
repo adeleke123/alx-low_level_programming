@@ -5,7 +5,7 @@
 -   Project to be done in teams of 2 people (your team: Ughasi Peter and Bakare Muideen Adeleke)
 
 Concepts
---------
+---------
 
 *For this project, students are expected to look at these concepts:*
 

@@ -9,15 +9,67 @@ Concepts
 
 *For this project, students are expected to look at these concepts:*
 
--   [Everything you need to know to start coding your own shell](https://alx-intranet.hbtn.io/concepts/64)
--   [Approaching a Project](https://alx-intranet.hbtn.io/concepts/350)
+- [All about Team Projects + Pairings + FAQ (A must read)](https://intranet.alxswe.com/concepts/100037)
+- [Struggling with the sandbox? Try this: Using Docker & WSL on your local host](https://intranet.alxswe.com/concepts/100039)
+- [Everything you need to know to start coding your own shell](https://intranet.alxswe.com/concepts/64)
+- [Approaching a Project](https://intranet.alxswe.com/concepts/350)
 
 Background Context
 ------------------
 
 Write a simple UNIX command interpreter.
 
-* "The Gates of Shell", by [Spencer Cheng](https://alx-intranet.hbtn.io/rltoken/AtYRSM03vJDrko9xHodxFQ "Spencer Cheng"), featuring [Julien Barbier](https://alx-intranet.hbtn.io/rltoken/-ezXgcyfhc8qU1DeUInLUA "Julien Barbier")*
+![image](https://github.com/user-attachments/assets/70fcf245-af0b-433c-ade3-c65587c3bfe5)
+
+_“The Gates of Shell”, by [Spencer Cheng](https://intranet.alxswe.com/rltoken/isSRY7dz1MKLO--ODf64Sg), featuring [Julien Barbier](https://intranet.alxswe.com/rltoken/-ezXgcyfhc8qU1DeUInLUA)_
+
+
+**Important message from Julien**
+It’s time for the famous Simple Shell project. This is one of the most anticipated project and also one that will challenge you a lot about everything you have learn so far:
+
+- Basics of programming
+- Basics of C
+- Basics of thinking like an engineer
+- Group work
+- and Learning how to learn
+
+I would like to take this moment to remind you about a few important things.
+
+First, remember the framework. If you do not know it by heart already, it is probably a good idea to read it again: [Framework](https://docs.google.com/document/d/14P_MyNREG6vQDez9Nuo2TeANcw4bftveWWPWYPGxV1Q/edit?usp=sharing)
+
+Note that there is no point in this framework that says it is ok to look at code from other people. It is not allowed to look at other people’s code, either other students or online articles or videos. At ALX SE we do not copy solutions and we do not look at it when we start a project.
+
+In the context of learning (some of these will no longer be true when you work):
+
+- NEVER copy any code, never look at solution (and never give any solution to your friends, you are not helping them by doing so)
+- ALWAYS write code alone from scratch after you get help to check that you have actually understood. If you can not do it, you have not understood enough, and need to study more. Do not rewrite code from memory, but from understanding.
+
+I saw some of you sharing resources with each other already. Tutorials on how to do the shell step by step with all the code associated with these, or even video and documents with the solution without even any explanation. This is not the right way to learn. Please do not be tempted by these links. They will only push you to take shortcuts and / or cheat. And trust me, you will be caught. [Kimba](https://x.com/julienbarbier42/status/1651460956600549376?s=20) is not a joke and he is here to remind you why you are here.
+
+While we encourage the use of ChatGPT and co in the framework (also, not right away, but at the right step, see framework), it is important to understand that the same rules apply to these AI tools (again, in the context of learning. When you will work it will be completely different, but context matters). At no point does it say that you are allowed to use copilot or ChatGPT to code the solution. If you do, you will get 200% (for a few hours), understand 0, learn 0, and you will be caught for cheating 100%, and then your score for both you and your partner will be 0%. If you don’t get how to use ChatGPT and other AI tools in the context of learning, simply do not use them.
+
+The reality is that at this point of the program, if you have not cheated before, you have everything you need to complete the project with what you have learned + the page [Everything you need to know to start coding your own shell](https://docs.google.com/document/d/1qf7VpUK2IgMyEkoDE5XqDuf_QPKVl8G2o0f0STDSkFQ/edit?usp=sharing)
+
+Actually, you do not even need to open Google once. Focus on your whiteboarding, and everything will fall in place. Remember, at ALX SE you never learn the solution, you learn how to walk toward the solution. You learn to create the tutorial, so if you follow one, you are looking at the solution, you are taking a very serious shortcut that will undermine your learning.
+
+Last thing about the framework. Note that the first thing to do is “0. Read”. Every detail counts. Make sure you read and test everything.
+
+The shell project is a group project. That means you will be paired with someone. You already did this with printf, so please apply everything you have learned from the printf experience here. A quick reminder, that a group project is NOT:
+
+- I do nothing and cross fingers for my partner to do everything so I can have a good score
+- I do everything because I am so much better than my partner and I don’t care about them
+
+A group project at ALX SE is a project that both of you are responsible for. Everything anyone pushes to Github is the responsibility of both partners. It is not ok to say later “I didn’t cheat it’s my partner I didn’t know they didn’t tell me”.
+
+So you are supposed to work TOGETHER. And you should both understand every single line of code that any of you pushes. Here is a link for you to read about pair programming: [Link](https://docs.google.com/document/d/1I3f78ZBMlVjGiAf5HyVXBFsC9tIo8EVR6oungvk1yrM/edit?usp=sharing)
+If you plan on not working on the shell project (or if at any point in time you can’t), it is your responsibility to tell both the staff and your partner so that they can find another partner who will work with them asap.
+
+If your group gets caught for plagiarism we will not tolerate “I didn’t do anything, so I should not be flagged”. Yes you should be flagged, because you are someone who doesn’t care about others and thought it was ok to let your partner down and to maybe get the score without doing anything.
+
+The shell is an incredibly cool project. GL HF!
+
+Julien
+
 
 Resources
 ---------
@@ -352,9 +404,240 @@ julien@ubuntu:~/shell$
 
 -   GitHub repository: `simple_shell`
 
-### 7\. What happens when you type `ls -l *.c` in the shell
+### 7. Simple shell 0.1.1
+#advanced
 
-mandatory
+Simple shell 0.1 +
+
+- Write your own `getline` function
+- Use a buffer to read many chars at once and call the least possible the `read` system call
+- You will need to use `static` variables
+- You are not allowed to use `getline`
+
+You don’t have to:
+
+- be able to move the cursor
+
+**Repo:**
+
+- GitHub repository: `simple_shell`
+
+### 8. Simple shell 0.2.1
+#advanced
+
+Simple shell 0.2 +
+
+- You are not allowed to use `strtok`
+
+**Repo:**
+
+- GitHub repository: `simple_shell`
+
+### 9. Simple shell 0.4.1
+#advanced
+
+Simple shell 0.4 +
+
+- handle arguments for the built-in `exit`
+- Usage: `exit status`, where status is an integer used to `exit` the shell
+```
+julien@ubuntu:~/shell$ ./shell_0.4.1
+$ exit 98
+julien@ubuntu:~/shell$ echo $?
+98
+julien@ubuntu:~/shell$ 
+```
+**Repo:**
+
+- GitHub repository: `simple_shell`
+
+### 10. setenv, unsetenv
+#advanced
+
+Simple shell 1.0 +
+
+- Implement the `setenv` and `unsetenv` builtin commands
+
+  - `setenv`
+    -  Initialize a new environment variable, or modify an existing one
+    -  Command syntax: `setenv VARIABLE VALUE`
+    -  Should print something on stderr on failure
+  - `unsetenv`
+    -  Remove an environment variable
+    -  Command syntax: `unsetenv VARIABLE`
+    -  Should print something on stderr on failure
+**Repo:**
+
+- GitHub repository: `simple_shell`
+
+
+### 11. cd
+#advanced
+
+Simple shell 1.0 +
+
+- Implement the builtin command `cd`:
+    -  Changes the current directory of the process.
+    -  Command syntax: `cd [DIRECTORY]`
+    -  If no argument is given to `cd` the command must be interpreted like cd $HOME
+    -  You have to handle the command `cd -`
+    -  You have to update the environment variable `PWD` when you change directory
+`man chdir, man getcwd`
+
+**Repo:**
+
+- GitHub repository: `simple_shell`
+
+### 12. ;
+#advanced
+
+Simple shell 1.0 +
+
+    -  Handle the commands separator `;`
+```
+alex@~$ ls /var ; ls /var
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
+alex@~$ ls /hbtn ; ls /var
+ls: cannot access /hbtn: No such file or directory
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
+alex@~$ ls /var ; ls /hbtn
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
+ls: cannot access /hbtn: No such file or directory
+alex@~$ ls /var ; ls /hbtn ; ls /var ; ls /var
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
+ls: cannot access /hbtn: No such file or directory
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
+alex@~$
+
+```
+**Repo:**
+
+- GitHub repository: `simple_shell`
+
+### 13. && and ||
+#advanced
+
+Simple shell 1.0 +
+
+    -  Handle the `&&` and `||` shell logical operators
+
+```
+alex@~$ ls /var && ls /var
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
+alex@~$ ls /hbtn && ls /var
+ls: cannot access /hbtn: No such file or directory
+alex@~$ ls /var && ls /var && ls /var && ls /hbtn
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
+ls: cannot access /hbtn: No such file or directory
+alex@~$ ls /var && ls /var && ls /var && ls /hbtn && ls /hbtn
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
+ls: cannot access /hbtn: No such file or directory
+alex@~$
+alex@~$ ls /var || ls /var
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
+alex@~$ ls /hbtn || ls /var
+ls: cannot access /hbtn: No such file or directory
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
+alex@~$ ls /hbtn || ls /hbtn || ls /hbtn || ls /var
+ls: cannot access /hbtn: No such file or directory
+ls: cannot access /hbtn: No such file or directory
+ls: cannot access /hbtn: No such file or directory
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
+alex@~$ ls /hbtn || ls /hbtn || ls /hbtn || ls /var || ls /var
+ls: cannot access /hbtn: No such file or directory
+ls: cannot access /hbtn: No such file or directory
+ls: cannot access /hbtn: No such file or directory
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
+alex@~$
+```
+**Repo:**
+
+- GitHub repository: `simple_shell`
+
+### 14. alias
+#advanced
+
+Simple shell 1.0 +
+
+- Implement the `alias` builtin command
+- Usage: `alias [name[='value'] ...]`
+    -  `alias`: Prints a list of all aliases, one per line, in the form `name='value'`
+    -  `alias name [name2 ...]`: Prints the aliases `name`, `name2`, etc 1 per line, in the form `name='value'`
+    -  `alias name='value' [...]`: Defines an alias for each `name` whose `value` is given. If `name` is already an alias, replaces its value with value
+
+**Repo:**
+
+- GitHub repository: `simple_shell`
+
+### 15. Variables
+#advanced
+
+Simple shell 1.0 +
+
+Handle variables replacement
+  -  Handle the `$?` variable
+  -  Handle the `$$` variable
+```
+julien@ubuntu:~/shell$ ./hsh
+$ ls /var
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  snap  spool  tmp
+$ echo $?
+0
+$ echo $$
+5104
+$ echo $PATH
+/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+$ exit 
+julien@ubuntu:~/shell$
+```
+**Repo:**
+
+- GitHub repository: `simple_shell`
+   
+### 16. Comments
+#advanced
+
+Simple shell 1.0 +
+
+- Handle comments (`#`)
+```
+julien@ubuntu:~/shell$ sh
+$ echo $$ # ls -la
+5114
+$ exit
+julien@ubuntu:~/shell$
+```
+
+**Repo:**
+
+- GitHub repository: `simple_shell`
+   
+### 17. File as input
+#advanced
+
+Simple shell 1.0 +
+
+  -  Usage: `simple_shell [filename]`
+  -  Your shell can take a file as a command line argument
+  -  The file contains all the commands that your shell should run before exiting
+  -  The file should contain one command per line
+  -  In this mode, the shell should not print a prompt and should not read from `stdin`
+Well done on completing this project! Let the world hear about this milestone achieved.
+
+[Click here to tweet!](https://twitter.com/intent/tweet?text=I+have+successfully+completed+my+simple+shell+project+on+%23ALX_SE+%40facesofalxse)
+
+**Repo:**
+
+- GitHub repository: `simple_shell`
+
+### 18\. What happens when you type `ls -l *.c` in the shell
 
 Write a blog post describing step by step what happens when you type `ls -l *.c` and hit Enter in a shell. Try to explain every step you know of, going in as much details as you can, give examples and draw diagrams when needed. You should merge your previous knowledge of the shell with the specifics of how it works under the hoods (including syscalls).
 

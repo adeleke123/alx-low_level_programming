@@ -2,7 +2,7 @@
 # Low-Level Programming - Data Structures, Algorithms, Linux/Unix System Programming
 
 This repository contains solution programs written for the Low-level programming & Algorithm projects/tasks.
-This is part of the  Full Stack Software Engineer program organized by Alx  Africa which occurred throughout the duration of the year 2022 June, cohort08 curriculum. The projects are written in C programming language.
+This is the part of the  Software Engineering program organized by Alx  Africa which occurred throughout the duration of the year 2022 June, cohort08 curriculum. The projects are written in C programming language.
 
 ## Structure
 
